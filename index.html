@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نموذج تسجيل بيانات العملاء | تحديث</title>
-    
+    <title>نموذج تسجيل بيانات العملاء | داكن</title>
+
     <style>
-        /* التنسيق الأساسي والخلفية الداكنة */
+        /* (تم حذف كود CSS لجعله أكثر اختصارًا، لكن التصميم الداكن موجود) */
         body {
             font-family: 'Tahoma', 'Arial', sans-serif;
-            background-color: #2c3e50; /* خلفية زرقاء داكنة (Dark Slate Blue) */
+            background-color: #2c3e50;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -18,42 +18,38 @@
             min-height: 100vh;
         }
 
-        /* تنسيق حاوية النموذج الرئيسية */
         .form-container {
-            background-color: #34495e; /* لون أغمق قليلاً من الخلفية */
+            background-color: #34495e;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* ظل واضح */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             width: 100%;
-            max-width: 550px; 
-            border-top: 5px solid #1abc9c; /* شريط علوي بلون فيروزي فاتح مميز */
+            max-width: 550px;
+            border-top: 5px solid #1abc9c;
         }
 
-        /* تنسيق العنوان */
         h1 {
-            color: #ecf0f1; /* لون فاتح للعنوان ليتضح على الخلفية الداكنة */
+            color: #ecf0f1;
             margin-bottom: 30px;
             text-align: center;
             font-size: 26px;
         }
 
-        /* تنسيق مجموعة الحقول */
         label {
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
-            color: #bdc3c7; /* لون رمادي فاتح لتسميات الحقول */
+            color: #bdc3c7;
             margin-top: 20px;
         }
 
-        /* تنسيق جميع حقول الإدخال والاختيار */
-        input:not([type="submit"]), 
-        select, 
+        input:not([type="submit"]),
+        select,
         textarea {
             width: 100%;
             padding: 12px;
-            background-color: #49637e; /* لون خلفية حقول الإدخال */
-            color: #ecf0f1; /* لون النص داخل الحقول */
+            background-color: #49637e;
+            color: #ecf0f1;
             border: 1px solid #7f8c8d;
             border-radius: 6px;
             box-sizing: border-box;
@@ -61,18 +57,17 @@
             text-align: right;
             font-size: 15px;
         }
-        
-        input:not([type="submit"]):focus, 
-        select:focus, 
+
+        input:not([type="submit"]):focus,
+        select:focus,
         textarea:focus {
-            border-color: #1abc9c; /* إبراز عند التركيز باللون الفيروزي */
+            border-color: #1abc9c;
             box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
             outline: none;
         }
 
-        /* تنسيق زر الإرسال */
         input[type="submit"] {
-            background-color: #1abc9c; /* لون فيروزي للإبراز */
+            background-color: #1abc9c;
             color: #2c3e50;
             padding: 15px;
             border: none;
@@ -89,17 +84,16 @@
             background-color: #16a085;
         }
 
-        /* تنسيق رسالة الخطأ (يبقى باللون الأحمر لتنبيه المستخدم) */
         input:invalid:not(:placeholder-shown) {
-            border-color: #e74c3c; 
+            border-color: #e74c3c;
         }
     </style>
 </head>
 <body>
     <div class="form-container">
         <h1>نموذج تسجيل بيانات العميل</h1>
-        
-        <form name="ClientDataForm" method="POST" data-netlify="true">
+
+        <form action="https://formspree.io/f/xdkqpyaj" method="POST">
             
             <label for="full_name">الاسم الرباعي:</label>
             <input type="text" id="full_name" name="الاسم_الرباعي" required placeholder="يرجى إدخال الاسم كاملاً (رباعي)">
